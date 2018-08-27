@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9737A64B213431DD0078F640 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 9737A649213431DC0078F640 /* Assets */; };
+		9737A64C213431DD0078F640 /* Screens in Resources */ = {isa = PBXBuildFile; fileRef = 9737A64A213431DD0078F640 /* Screens */; };
 		97D9EE852134290A00340A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9EE842134290A00340A26 /* AppDelegate.swift */; };
 		97D9EE872134290A00340A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D9EE862134290A00340A26 /* ViewController.swift */; };
 		97D9EE8A2134290A00340A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D9EE882134290A00340A26 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9737A649213431DC0078F640 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Assets; path = "../../../../../Downloads/DesignCodeApp Assets/Assets"; sourceTree = "<group>"; };
+		9737A64A213431DD0078F640 /* Screens */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Screens; path = "../../../../../Downloads/DesignCodeApp Assets/Screens"; sourceTree = "<group>"; };
 		97D9EE812134290A00340A26 /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97D9EE842134290A00340A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97D9EE862134290A00340A26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				97D9EE862134290A00340A26 /* ViewController.swift */,
 				97D9EE882134290A00340A26 /* Main.storyboard */,
 				97D9EE8E2134290E00340A26 /* Assets.xcassets */,
+				9737A649213431DC0078F640 /* Assets */,
+				9737A64A213431DD0078F640 /* Screens */,
 				97D9EE902134290E00340A26 /* LaunchScreen.storyboard */,
 				97D9EE932134290E00340A26 /* Info.plist */,
 				97D9EE8B2134290A00340A26 /* DesignCodeApp.xcdatamodeld */,
@@ -126,8 +132,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D9EE922134290E00340A26 /* LaunchScreen.storyboard in Resources */,
+				9737A64B213431DD0078F640 /* Assets in Resources */,
 				97D9EE8F2134290E00340A26 /* Assets.xcassets in Resources */,
 				97D9EE8A2134290A00340A26 /* Main.storyboard in Resources */,
+				9737A64C213431DD0078F640 /* Screens in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
