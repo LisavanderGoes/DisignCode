@@ -21,17 +21,29 @@ class MyViewController : UIViewController {
         captionLabel.text = "Design directly in Playground"
         captionLabel.textColor = .white
         
+        let coverImageView = UIImageView()
+        coverImageView.frame = CGRect(x: 0, y: 0, width: 300, height: 250)
+        coverImageView.contentMode = .scaleAspectFill
+        coverImageView.image = #imageLiteral(resourceName: "Cover.jpg")
+        coverImageView.clipsToBounds = true
+        coverImageView.layer.cornerRadius = 14
+        
+        let backgroundImangeView = UIImageView()
+        backgroundImangeView.frame = CGRect(x: 0, y: 0, width: 375, height: 667)
+        backgroundImangeView.image = #imageLiteral(resourceName: "Chapters Screen@2x.png")
+        
         let cardView = UIView()
         cardView.frame = CGRect(x: 20, y: 255, width: 300, height: 250)
         cardView.backgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
         cardView.layer.cornerRadius = 14
         cardView.layer.shadowOpacity = 0.25
         cardView.layer.shadowOffset = CGSize(width: 0, height: 10)
+        
+        view.addSubview(backgroundImangeView)
+        view.addSubview(cardView)
+        cardView.addSubview(coverImageView)
         cardView.addSubview(titleLabel)
         cardView.addSubview(captionLabel)
-        
-        
-        view.addSubview(cardView)
         self.view = view
     }
 }
