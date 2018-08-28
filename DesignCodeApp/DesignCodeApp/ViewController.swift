@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var bookView: UIView!
     @IBOutlet weak var heroView: UIView!
+    @IBOutlet weak var chapterCollectionView: UICollectionView!
+    
     
     
     @IBAction func playButtonTapped(_ sender: Any) {
@@ -34,6 +36,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         scrollView.delegate = self
+        chapterCollectionView.delegate = self
+        chapterCollectionView.dataSource = self
         
         titleLabel.alpha = 0
         deviceImageView.alpha = 0
@@ -51,7 +55,6 @@ class ViewController: UIViewController {
 extension ViewController: UIScrollViewDelegate{
     
     func scrollViewDidScroll( _ scrollView: UIScrollView){
-        print(scrollView)
         let offsetY = scrollView.contentOffset.y
         if offsetY < 0{
             heroView.transform = CGAffineTransform(translationX: 0, y: offsetY)
@@ -61,5 +64,18 @@ extension ViewController: UIScrollViewDelegate{
             backgroundImageView.transform = CGAffineTransform(translationX: 0, y: -offsetY/5)
         }
     }
+}
+
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sectionCell", for: indexPath)
+        return cell
+    }
+    
+    
 }
 
