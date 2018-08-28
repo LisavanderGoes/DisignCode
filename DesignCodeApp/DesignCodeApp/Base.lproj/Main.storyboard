@@ -226,7 +226,7 @@
         <!--View Controller-->
         <scene sceneID="B3I-dP-3aj">
             <objects>
-                <viewController id="dMo-jV-6fj" sceneMemberID="viewController">
+                <viewController id="dMo-jV-6fj" customClass="ViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Mzo-V9-FfF" userLabel="Super View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,11 +282,11 @@
                                             <constraint firstItem="uua-1E-AEW" firstAttribute="centerX" secondItem="guA-rd-Vv2" secondAttribute="centerX" id="vx7-aB-ih8"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqs-qb-hxG" userLabel="Hero View">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqs-qb-hxG" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cover.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ihe-Ca-GNm">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                                                <rect key="frame" x="0.0" y="-50" width="375" height="502"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to design &amp; code for iOS 11." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4p-g9-8ku">
                                                 <rect key="frame" x="38" y="106" width="160" height="172"/>
@@ -466,6 +466,9 @@
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flB-I1-BPr">
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <state key="normal" image="Action-Play-Small"/>
+                                                            <connections>
+                                                                <action selector="playButtonTapped:" destination="dMo-jV-6fj" eventType="touchUpInside" id="jlR-Dp-Mgz"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <constraints>
@@ -495,7 +498,7 @@
                                             <constraint firstItem="aiS-dI-GhW" firstAttribute="centerY" secondItem="a4p-g9-8ku" secondAttribute="centerY" constant="12.5" id="KW4-Ka-aQG"/>
                                             <constraint firstItem="a4p-g9-8ku" firstAttribute="centerY" secondItem="Oqs-qb-hxG" secondAttribute="centerY" constant="-34" id="LIP-iX-eA5"/>
                                             <constraint firstItem="Ihe-Ca-GNm" firstAttribute="top" secondItem="Oqs-qb-hxG" secondAttribute="top" id="ah5-J1-tl2"/>
-                                            <constraint firstItem="Ihe-Ca-GNm" firstAttribute="top" secondItem="Oqs-qb-hxG" secondAttribute="top" id="bQr-Nt-8Lm"/>
+                                            <constraint firstItem="Ihe-Ca-GNm" firstAttribute="top" secondItem="Oqs-qb-hxG" secondAttribute="top" constant="-50" id="bQr-Nt-8Lm"/>
                                             <constraint firstAttribute="bottom" secondItem="8OW-AY-Yxm" secondAttribute="bottom" id="cma-aP-FnV"/>
                                             <constraint firstAttribute="bottom" secondItem="Ihe-Ca-GNm" secondAttribute="bottom" id="eLF-Um-nzN"/>
                                             <constraint firstAttribute="bottom" secondItem="Ihe-Ca-GNm" secondAttribute="bottom" id="jG5-70-VVa"/>
@@ -564,10 +567,34 @@
                         <viewLayoutGuide key="safeArea" id="efr-gA-wCP"/>
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Ihe-Ca-GNm" id="PIE-df-Do4"/>
+                        <outlet property="bookView" destination="JNJ-WD-K2B" id="M0o-1v-RpX"/>
+                        <outlet property="deviceImageView" destination="aiS-dI-GhW" id="ylz-U8-qK1"/>
+                        <outlet property="heroView" destination="Oqs-qb-hxG" id="ve5-h7-kp7"/>
+                        <outlet property="playVisualEffectView" destination="8TW-vo-OFo" id="Dg6-od-mcA"/>
+                        <outlet property="scrollView" destination="cGC-Oo-Br2" id="Ke4-h6-hop"/>
+                        <outlet property="titleLabel" destination="a4p-g9-8ku" id="Myc-08-8yA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="22E-RM-r5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1754" y="2297"/>
+        </scene>
+        <!--Section-->
+        <scene sceneID="Vo4-GB-HCb">
+            <objects>
+                <viewController title="Section" id="vdN-yY-jjE" customClass="SectionViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ElZ-Ou-mCk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="39r-oX-pOE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNo-Fs-hub" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2538" y="1858"/>
         </scene>
     </scenes>
     <resources>
