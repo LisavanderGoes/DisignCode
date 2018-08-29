@@ -698,7 +698,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="d2C-wU-lI4">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jvO-U0-YyO" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="420"/>
@@ -790,7 +790,7 @@
                                 <viewLayoutGuide key="safeArea" id="bum-5s-uoH"/>
                             </scrollView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="teI-cZ-gPm">
-                                <rect key="frame" x="319" y="64" width="36" height="36"/>
+                                <rect key="frame" x="319" y="20" width="36" height="36"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oZr-jf-02q">
                                     <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -805,6 +805,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="NPc-VC-D8t" secondAttribute="trailing" id="Nv9-O7-xnM"/>
+                                        <constraint firstItem="NPc-VC-D8t" firstAttribute="top" secondItem="oZr-jf-02q" secondAttribute="top" id="amf-4e-dbC"/>
                                         <constraint firstItem="NPc-VC-D8t" firstAttribute="top" secondItem="oZr-jf-02q" secondAttribute="top" id="hA2-I9-P11"/>
                                         <constraint firstAttribute="bottom" secondItem="NPc-VC-D8t" secondAttribute="bottom" id="hqo-Xa-AHL"/>
                                         <constraint firstItem="NPc-VC-D8t" firstAttribute="leading" secondItem="oZr-jf-02q" secondAttribute="leading" id="qek-hV-v0g"/>
@@ -826,15 +827,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="teI-cZ-gPm" firstAttribute="top" secondItem="39r-oX-pOE" secondAttribute="top" constant="20" id="G6B-LC-F31"/>
+                            <constraint firstItem="teI-cZ-gPm" firstAttribute="top" secondItem="ElZ-Ou-mCk" secondAttribute="top" constant="20" id="G6B-LC-F31"/>
                             <constraint firstItem="39r-oX-pOE" firstAttribute="trailing" secondItem="d2C-wU-lI4" secondAttribute="trailing" id="NL9-kJ-Cmc"/>
                             <constraint firstItem="39r-oX-pOE" firstAttribute="bottom" secondItem="d2C-wU-lI4" secondAttribute="bottom" id="Nyq-cd-oGa"/>
                             <constraint firstItem="39r-oX-pOE" firstAttribute="trailing" secondItem="teI-cZ-gPm" secondAttribute="trailing" constant="20" id="P3A-WW-Dvc"/>
                             <constraint firstItem="d2C-wU-lI4" firstAttribute="leading" secondItem="39r-oX-pOE" secondAttribute="leading" id="RDx-rY-4EB"/>
                             <constraint firstItem="39r-oX-pOE" firstAttribute="trailing" secondItem="teI-cZ-gPm" secondAttribute="trailing" constant="20" id="cKP-ae-jiO"/>
                             <constraint firstItem="d2C-wU-lI4" firstAttribute="centerX" secondItem="ElZ-Ou-mCk" secondAttribute="centerX" id="iTC-aL-QqO"/>
-                            <constraint firstItem="teI-cZ-gPm" firstAttribute="top" secondItem="39r-oX-pOE" secondAttribute="top" constant="20" id="mqA-4Y-1fx"/>
-                            <constraint firstItem="d2C-wU-lI4" firstAttribute="top" secondItem="39r-oX-pOE" secondAttribute="top" id="yOA-v0-y8R"/>
+                            <constraint firstItem="d2C-wU-lI4" firstAttribute="top" secondItem="ElZ-Ou-mCk" secondAttribute="top" id="yOA-v0-y8R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="39r-oX-pOE"/>
                     </view>
