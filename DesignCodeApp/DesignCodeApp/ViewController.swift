@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var heroView: UIView!
     @IBOutlet weak var chapterCollectionView: UICollectionView!
     
+    var isStatusBarHidden = false
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
     
     
     @IBAction func playButtonTapped(_ sender: Any) {
@@ -43,12 +48,27 @@ class ViewController: UIViewController {
         deviceImageView.alpha = 0
         playVisualEffectView.alpha = 0
         
+        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+        
         UIView.animate(withDuration: 1){
             self.titleLabel.alpha = 1
             self.deviceImageView.alpha = 1
             self.playVisualEffectView.alpha = 1
             
         }
+    }
+    
+    override var prefersStatusBarHidden: Bool{
+        return isStatusBarHidden
+    }
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation{
+        return .slide
+    }
+    
+    func setStatusBarBackgroundColor(color: UIColor) {
+        guard let statusBar = UIApplication.shared.value(forKeyPath: "statusBarWindow.statusBar") as? UIView else { return }
+        statusBar.backgroundColor = color
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
@@ -59,7 +79,16 @@ class ViewController: UIViewController {
             toViewController.section = section
             toViewController.sections = sections
             toViewController.indexPath = indexPath
+            
+            isStatusBarHidden = true
+            UIView.animate(withDuration: 0.5, animations: {self.setNeedsStatusBarAppearanceUpdate()})
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        isStatusBarHidden = false
+        UIView.animate(withDuration: 0.5, animations: {self.setNeedsStatusBarAppearanceUpdate()})
     }
 }
 

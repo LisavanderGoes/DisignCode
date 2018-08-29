@@ -232,7 +232,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="cGC-Oo-Br2">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="1956"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JNJ-WD-K2B" userLabel="Book View">
                                         <rect key="frame" x="0.0" y="452" width="375" height="348"/>
@@ -667,7 +667,7 @@
                         <constraints>
                             <constraint firstItem="cGC-Oo-Br2" firstAttribute="leading" secondItem="Mzo-V9-FfF" secondAttribute="leading" id="3MK-97-DrF"/>
                             <constraint firstAttribute="bottom" secondItem="cGC-Oo-Br2" secondAttribute="bottom" id="HAC-hG-h0R"/>
-                            <constraint firstItem="cGC-Oo-Br2" firstAttribute="top" secondItem="Mzo-V9-FfF" secondAttribute="top" id="Ycu-tw-KPv"/>
+                            <constraint firstItem="cGC-Oo-Br2" firstAttribute="top" secondItem="efr-gA-wCP" secondAttribute="top" id="Ycu-tw-KPv"/>
                             <constraint firstAttribute="trailing" secondItem="cGC-Oo-Br2" secondAttribute="trailing" id="shR-BT-Kqg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="efr-gA-wCP"/>
