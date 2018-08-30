@@ -90,6 +90,13 @@ class ViewController: UIViewController {
         isStatusBarHidden = false
         UIView.animate(withDuration: 0.5, animations: {self.setNeedsStatusBarAppearanceUpdate()})
     }
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        UITabBar.appearance().barTintColor = .black
+        UITabBar.appearance().tintColor = .white
+        return true
+    }
+    
 }
 
 extension ViewController: UIScrollViewDelegate{
@@ -110,7 +117,7 @@ extension ViewController: UIScrollViewDelegate{
                 let attributes = collectionView.layoutAttributesForItem(at: indexPath)!
                 let cellFrame = collectionView.convert(attributes.frame, to: view)
                 let translationX = cellFrame.origin.x / 5
-                cell.coverImageView.transform =  CGAffineTransform(translationX: translationX, y: 0)
+                //cell.coverImageView.transform =  CGAffineTransform(translationX: translationX, y: 0)
                 
                
                 cell.layer.transform = animateCell(cellFrame: cellFrame)
