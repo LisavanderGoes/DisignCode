@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var deviceImageView: UIImageView!
     @IBOutlet weak var playVisualEffectView: UIVisualEffectView!
@@ -48,7 +48,9 @@ class ViewController: UIViewController {
         deviceImageView.alpha = 0
         playVisualEffectView.alpha = 0
         
-        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+        //setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
         
         UIView.animate(withDuration: 1){
             self.titleLabel.alpha = 1
@@ -99,7 +101,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UIScrollViewDelegate{
+extension HomeViewController: UIScrollViewDelegate{
     
     func scrollViewDidScroll( _ scrollView: UIScrollView){
         let offsetY = scrollView.contentOffset.y
@@ -123,6 +125,10 @@ extension ViewController: UIScrollViewDelegate{
                 cell.layer.transform = animateCell(cellFrame: cellFrame)
             }
         }
+        
+        let navigationIsHidden = offsetY <= 0
+        navigationController?.setNavigationBarHidden(navigationIsHidden, animated : true)
+        
     }
     
     func animateCell(cellFrame: CGRect) -> CATransform3D{
@@ -146,7 +152,7 @@ extension ViewController: UIScrollViewDelegate{
     }
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sections.count
     }
@@ -166,4 +172,5 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource{
         performSegue(withIdentifier: "HomeToSection", sender: indexPath)
     }
 }
+
 
