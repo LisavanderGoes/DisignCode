@@ -19,6 +19,8 @@
 		97D9EE922134290E00340A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D9EE902134290E00340A26 /* LaunchScreen.storyboard */; };
 		97FF10ED2137EBBF0041F6AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FF10EC2137EBBF0041F6AD /* Assets.xcassets */; };
 		97FF10EF213801D60041F6AD /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF10EE213801D60041F6AD /* ChaptersViewController.swift */; };
+		97FF10F1213818000041F6AD /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF10F0213818000041F6AD /* BookmarksTableViewController.swift */; };
+		97FF10F3213826380041F6AD /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF10F2213826380041F6AD /* BookmarkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		97D9EE932134290E00340A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97FF10EC2137EBBF0041F6AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		97FF10EE213801D60041F6AD /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		97FF10F0213818000041F6AD /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
+		97FF10F2213826380041F6AD /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 			children = (
 				97D9EE842134290A00340A26 /* AppDelegate.swift */,
 				97D9EE862134290A00340A26 /* HomeViewController.swift */,
+				97FF10F0213818000041F6AD /* BookmarksTableViewController.swift */,
+				97FF10F2213826380041F6AD /* BookmarkTableViewCell.swift */,
 				97FF10EE213801D60041F6AD /* ChaptersViewController.swift */,
 				9768EDAF21368EC900D07D00 /* SectionCollectionViewCell.swift */,
 				979400BC2135709200BCB01A /* SectionViewController.swift */,
@@ -157,8 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D9EE872134290A00340A26 /* HomeViewController.swift in Sources */,
+				97FF10F1213818000041F6AD /* BookmarksTableViewController.swift in Sources */,
 				979400BF2135861500BCB01A /* Data.swift in Sources */,
 				971EE192213699D8000BAC39 /* TestimonialViewController.swift in Sources */,
+				97FF10F3213826380041F6AD /* BookmarkTableViewCell.swift in Sources */,
 				97D9EE852134290A00340A26 /* AppDelegate.swift in Sources */,
 				979400BD2135709200BCB01A /* SectionViewController.swift in Sources */,
 				9768EDB021368EC900D07D00 /* SectionCollectionViewCell.swift in Sources */,

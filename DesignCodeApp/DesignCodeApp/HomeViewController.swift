@@ -118,7 +118,7 @@ extension HomeViewController: UIScrollViewDelegate{
                 let indexPath = collectionView.indexPath(for: cell)!
                 let attributes = collectionView.layoutAttributesForItem(at: indexPath)!
                 let cellFrame = collectionView.convert(attributes.frame, to: view)
-                let translationX = cellFrame.origin.x / 5
+                //let translationX = cellFrame.origin.x / 5
                 //cell.coverImageView.transform =  CGAffineTransform(translationX: translationX, y: 0)
                 
                
