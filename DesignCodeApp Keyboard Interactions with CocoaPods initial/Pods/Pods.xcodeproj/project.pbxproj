@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0382F8615FA43AD33F1484D1BA8317D1 /* SpringTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E082093201D97E598C2EA56DAEEB8B1 /* SpringTextView.swift */; };
+		04F5F3DAE7CFD4F05C1446FD28499F9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		1103FE7AF76CBF77C3E5E7736BD6932E /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AE46A3C08E165B1ADDAC2745A8C4E1 /* SoundPlayer.swift */; };
+		1C8DEBFD704E1733A6223D708AF5BF20 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123D3B4FE616735E5827BACAAC4C642A /* BlurView.swift */; };
+		27CE3D09F8BB1677726D302D7C9B00AF /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6AEE8AB247B140A179B8C2A2C8DD42 /* ImageLoader.swift */; };
+		2CEE1C3742D5955B3DFD664C2845811A /* TPKeyboardAvoidingScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE038BD8992E286F9A93DB8CD9895D5 /* TPKeyboardAvoidingScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F76BE99F7510A8EBB86D5250442F561 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79882F123CA8147EE7943F9408ABC8A /* DesignableImageView.swift */; };
+		300C70C6DB10D2B26907394EAB01973C /* Pods-DesignCodeApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1E7AC7C53DE8AAE756ACBC7C75C56 /* Pods-DesignCodeApp-dummy.m */; };
+		32418D60EAA2F03A7F82B60D0459F0C3 /* TransitionZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D891FBED879DCC07D0B43E443380203 /* TransitionZoom.swift */; };
+		33C7EE7B5BCE5DEDAF4E0DF2A0A75D8F /* SpringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5E8C4B21559C3DECB6E496DA780794 /* SpringView.swift */; };
+		3CDA62B3C1ECF4A2ECEB9EB21FD5A6A7 /* Pods-DesignCodeApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 100CBB3C89DA8A84DEF4024C001977BD /* Pods-DesignCodeApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D06B07AA25DCB52D88F4BF0AD50988D /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2A5AA93F40457FEC9C5AA7985487D /* DesignableLabel.swift */; };
+		3EC22217A6EB18C6EE7F9954C8A893BC /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2715B3527F7B9958667B549FFE73E850 /* LoadingView.xib */; };
+		404F0B26A0555132BE32B10CD5DD96C6 /* TPKeyboardAvoidingCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = EBD03BCF1DEA8FAC10FD9210DE57BC02 /* TPKeyboardAvoidingCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42246508B9411475BE0853D5F833221E /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84250ACB02BC62EB47AADA71C7E96B10 /* AsyncImageView.swift */; };
+		5510F1266577CF8B28820F9C7C62102C /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF1E53777993F8A3F990CAFD3D6D377 /* Misc.swift */; };
+		55D93D56A094D70579E8B473DF99664B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5A8577EA3AB8B399D2B8622B66AEAF18 /* Spring-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC14689525502712AECDF5D02A07F36 /* Spring-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61F6F56193CB164BA70F983EE911E5FF /* SpringLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A24F56CDEB81511356C262DD2F5722 /* SpringLabel.swift */; };
+		6CB70DFEAB52DC34CD1996B843983C4C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9627CABA435CB85AF795D8288C4DA7EC /* LoadingView.swift */; };
+		721DBCC0D8D11D344E81318AC359E2D4 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B78D51BE49FA32471EF65835C13CC9F /* UIScrollView+TPKeyboardAvoidingAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77335251ACC1E98E5B6A6396A3A4A6B2 /* AutoTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDC21702F60C9E65C0E93D36FF5E978 /* AutoTextView.swift */; };
+		7A636EBA675B3D2405E5EA14E521C606 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E6DB44C6C4A46BA0CFF1911BBBD5F5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7AF126D4C861784220BC7314E00DDDC1 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229F1F7145EBF529C7E52A5113547357 /* DesignableView.swift */; };
+		80574C9B3009C1E63A8B07D576C1AB78 /* SpringTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22F7CFC7D5503FC66C79EFC0420925 /* SpringTextField.swift */; };
+		811DA0870C0078DE35F3131AC2DDA7CC /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB050A40F6625EB88D48D524D4EFFE8 /* SpringAnimation.swift */; };
+		8BAF5CE0E390DFC6D37549982D98F250 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D79304F0EF2C29F7BEB7E09162E7B9 /* TransitionManager.swift */; };
+		8C9B1DE8719D0F21C72A89ABD347568B /* KeyboardLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507013B77EF95FBAECCFB5D293076847 /* KeyboardLayoutConstraint.swift */; };
+		9A27E4CE1E5A11D5FF5F14F15A6373F2 /* Spring-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F75819EB4588DB6FE78F564587ECBE53 /* Spring-dummy.m */; };
+		9DD43623F4196F7B61437F9125AE225B /* TPKeyboardAvoidingTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D202D6E7EB59C7AC25322248E3253C3 /* TPKeyboardAvoidingTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E1B98B25B2C64C1A1F04D419248DBD3 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E0C334A433E21D0161BBDA3FE417F0 /* TPKeyboardAvoidingScrollView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		ADF0C78E892648CCA0A76E7922C0ABFA /* SpringButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729D8FBEFC447AEDABA93713C6BC730C /* SpringButton.swift */; };
+		AF1211E57FC311EAFB557A40C3A554E2 /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480FECBF6543AE243C29BFE9BF18E4BE /* DesignableTextView.swift */; };
+		AF3CF7D7D2A9F5E9EAA6E47BACD0DA9F /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F82DE95A1010CF09022FBC7171C5C33 /* TPKeyboardAvoidingCollectionView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B5007DF87956C0B6604F8CCC8454B8AA /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4D5737B8C16D42A64821780A8DC836 /* DesignableTextField.swift */; };
+		C0B184D76EDB50EC436899FF92C14DBD /* TPKeyboardAvoidingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA79B36E63F75B42C9ADBD46B28752EF /* TPKeyboardAvoidingTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C33E77E96059E608DC45031709EF42E4 /* AsyncButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A920208A3ED604EB6762C568F7ABB3 /* AsyncButton.swift */; };
+		C4A3BAE924ACFDFC2B576F82BE3F8CCA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CA7B4001B6EEDBC829398E3CCB62A1D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6528123EFD7228EA9942FC0DC7BF3489 /* Images.xcassets */; };
+		D00D6776E412EAE228503E72412002DD /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB866C66604F21E7FEF80337272F6F6 /* DesignableButton.swift */; };
+		D83327E4C751868F61939BD8D10BED00 /* SpringImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6981FD666D5210E6F265DF4C5843EA5 /* SpringImageView.swift */; };
+		D947021E7BD322F6D738D383AF3D724D /* TPKeyboardAvoiding-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E48027B7DA566683EB23DF92B4061C7 /* TPKeyboardAvoiding-dummy.m */; };
+		DA1B55EEDDDF81085A75F44462E13C82 /* TPKeyboardAvoiding-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F99BA5411984A3110E9DBAE90FD7E3D9 /* TPKeyboardAvoiding-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBACC17D39DFCF8C6EA1A8F09CFD8DA5 /* Spring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68527FBD4F8D8D8772AC70A5E0E3782B /* Spring.swift */; };
+		DFE48E3DC99B6A4732644E598F30448B /* DesignableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90815A8E5DAB97DBC692BE42FB64B543 /* DesignableTabBarController.swift */; };
+		F7EF37F73559AFC34AA18ACE8699385C /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8262D5B3681265A1D2011E395793AD1 /* UnwindSegue.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DD51D483E2A86377D0F43D7496A55EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA6D46486DD14DBB55DA52B273C3DE60;
+			remoteInfo = TPKeyboardAvoiding;
+		};
+		E1678B5E318425A096ED1C0A1E3B5E6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57638207A68A290A64318FCE3D4280C6;
+			remoteInfo = Spring;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03BB785ABC62247DF98D5F85D70C10D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09BD58D36F409B1F41AEF5D135961ABF /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Spring.framework; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		100CBB3C89DA8A84DEF4024C001977BD /* Pods-DesignCodeApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DesignCodeApp-umbrella.h"; sourceTree = "<group>"; };
+		123D3B4FE616735E5827BACAAC4C642A /* BlurView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlurView.swift; path = Spring/BlurView.swift; sourceTree = "<group>"; };
+		1532E23052B88BA57247DB24E9D6FDEE /* Spring.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Spring.modulemap; sourceTree = "<group>"; };
+		15E6DB44C6C4A46BA0CFF1911BBBD5F5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+TPKeyboardAvoidingAdditions.m"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.m"; sourceTree = "<group>"; };
+		1B7A49E117A807608079455340021FC5 /* Pods-DesignCodeApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DesignCodeApp-frameworks.sh"; sourceTree = "<group>"; };
+		1E082093201D97E598C2EA56DAEEB8B1 /* SpringTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextView.swift; path = Spring/SpringTextView.swift; sourceTree = "<group>"; };
+		229F1F7145EBF529C7E52A5113547357 /* DesignableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableView.swift; path = Spring/DesignableView.swift; sourceTree = "<group>"; };
+		2715B3527F7B9958667B549FFE73E850 /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingView.xib; path = Spring/LoadingView.xib; sourceTree = "<group>"; };
+		2BA1E7AC7C53DE8AAE756ACBC7C75C56 /* Pods-DesignCodeApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DesignCodeApp-dummy.m"; sourceTree = "<group>"; };
+		2D202D6E7EB59C7AC25322248E3253C3 /* TPKeyboardAvoidingTableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingTableView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.h; sourceTree = "<group>"; };
+		30B59EAEF5B78894D5458BA23454BAD7 /* Pods-DesignCodeApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DesignCodeApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		32D2A5AA93F40457FEC9C5AA7985487D /* DesignableLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableLabel.swift; path = Spring/DesignableLabel.swift; sourceTree = "<group>"; };
+		3E5E8C4B21559C3DECB6E496DA780794 /* SpringView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringView.swift; path = Spring/SpringView.swift; sourceTree = "<group>"; };
+		47A920208A3ED604EB6762C568F7ABB3 /* AsyncButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncButton.swift; path = Spring/AsyncButton.swift; sourceTree = "<group>"; };
+		480FECBF6543AE243C29BFE9BF18E4BE /* DesignableTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextView.swift; path = Spring/DesignableTextView.swift; sourceTree = "<group>"; };
+		4B3E056C50F5833EAF86A5A782DAFC70 /* TPKeyboardAvoiding.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPKeyboardAvoiding.modulemap; sourceTree = "<group>"; };
+		4DB866C66604F21E7FEF80337272F6F6 /* DesignableButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableButton.swift; path = Spring/DesignableButton.swift; sourceTree = "<group>"; };
+		4FB050A40F6625EB88D48D524D4EFFE8 /* SpringAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringAnimation.swift; path = Spring/SpringAnimation.swift; sourceTree = "<group>"; };
+		507013B77EF95FBAECCFB5D293076847 /* KeyboardLayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardLayoutConstraint.swift; path = Spring/KeyboardLayoutConstraint.swift; sourceTree = "<group>"; };
+		51FAE5B4318583CE41E1467C84520F74 /* Pods_DesignCodeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DesignCodeApp.framework; path = "Pods-DesignCodeApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6528123EFD7228EA9942FC0DC7BF3489 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SpringApp/Images.xcassets; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		68527FBD4F8D8D8772AC70A5E0E3782B /* Spring.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Spring.swift; path = Spring/Spring.swift; sourceTree = "<group>"; };
+		6B78D51BE49FA32471EF65835C13CC9F /* UIScrollView+TPKeyboardAvoidingAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+TPKeyboardAvoidingAdditions.h"; path = "TPKeyboardAvoiding/UIScrollView+TPKeyboardAvoidingAdditions.h"; sourceTree = "<group>"; };
+		6C4D5737B8C16D42A64821780A8DC836 /* DesignableTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTextField.swift; path = Spring/DesignableTextField.swift; sourceTree = "<group>"; };
+		6D891FBED879DCC07D0B43E443380203 /* TransitionZoom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionZoom.swift; path = Spring/TransitionZoom.swift; sourceTree = "<group>"; };
+		6FC14689525502712AECDF5D02A07F36 /* Spring-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-umbrella.h"; sourceTree = "<group>"; };
+		729D8FBEFC447AEDABA93713C6BC730C /* SpringButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringButton.swift; path = Spring/SpringButton.swift; sourceTree = "<group>"; };
+		74AE46A3C08E165B1ADDAC2745A8C4E1 /* SoundPlayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SoundPlayer.swift; path = Spring/SoundPlayer.swift; sourceTree = "<group>"; };
+		77258224FECC6E59DAFC1A253D5032A7 /* Spring-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Spring-prefix.pch"; sourceTree = "<group>"; };
+		78D79304F0EF2C29F7BEB7E09162E7B9 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionManager.swift; path = Spring/TransitionManager.swift; sourceTree = "<group>"; };
+		7F82DE95A1010CF09022FBC7171C5C33 /* TPKeyboardAvoidingCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingCollectionView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.m; sourceTree = "<group>"; };
+		83909CACC60D5478D98CE862EAB2D355 /* Pods-DesignCodeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DesignCodeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		84250ACB02BC62EB47AADA71C7E96B10 /* AsyncImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncImageView.swift; path = Spring/AsyncImageView.swift; sourceTree = "<group>"; };
+		8CDC21702F60C9E65C0E93D36FF5E978 /* AutoTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AutoTextView.swift; path = Spring/AutoTextView.swift; sourceTree = "<group>"; };
+		8E48027B7DA566683EB23DF92B4061C7 /* TPKeyboardAvoiding-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPKeyboardAvoiding-dummy.m"; sourceTree = "<group>"; };
+		90815A8E5DAB97DBC692BE42FB64B543 /* DesignableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableTabBarController.swift; path = Spring/DesignableTabBarController.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9627CABA435CB85AF795D8288C4DA7EC /* LoadingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingView.swift; path = Spring/LoadingView.swift; sourceTree = "<group>"; };
+		96E4357B7C2E521F7AE2323811FFD74F /* TPKeyboardAvoiding-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-prefix.pch"; sourceTree = "<group>"; };
+		98A24F56CDEB81511356C262DD2F5722 /* SpringLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringLabel.swift; path = Spring/SpringLabel.swift; sourceTree = "<group>"; };
+		9EDA3F85101BEF5CE7DA8F139658FE21 /* Pods-DesignCodeApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DesignCodeApp-resources.sh"; sourceTree = "<group>"; };
+		9F914EEC31AAD4291A010B8C99409BD3 /* Pods-DesignCodeApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-DesignCodeApp.modulemap"; sourceTree = "<group>"; };
+		A039D3CB4440312F3C6A47E96453AE83 /* Pods-DesignCodeApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DesignCodeApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		A2E17F25BCD861F0CBA3C71FBD6CCA3F /* TPKeyboardAvoiding.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPKeyboardAvoiding.xcconfig; sourceTree = "<group>"; };
+		A79882F123CA8147EE7943F9408ABC8A /* DesignableImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DesignableImageView.swift; path = Spring/DesignableImageView.swift; sourceTree = "<group>"; };
+		A8E0C334A433E21D0161BBDA3FE417F0 /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingScrollView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		AC6AEE8AB247B140A179B8C2A2C8DD42 /* ImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = Spring/ImageLoader.swift; sourceTree = "<group>"; };
+		B8262D5B3681265A1D2011E395793AD1 /* UnwindSegue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnwindSegue.swift; path = Spring/UnwindSegue.swift; sourceTree = "<group>"; };
+		BCF1E53777993F8A3F990CAFD3D6D377 /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Misc.swift; path = Spring/Misc.swift; sourceTree = "<group>"; };
+		C39129AC4E1EF42F3CC66B536AE30952 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C87B023CC4CE4A7DBF73CC4F6E0EC127 /* TPKeyboardAvoiding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPKeyboardAvoiding.framework; path = TPKeyboardAvoiding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE9DE973A57AE29F4A9110701AA54E5 /* Pods-DesignCodeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DesignCodeApp.release.xcconfig"; sourceTree = "<group>"; };
+		D6981FD666D5210E6F265DF4C5843EA5 /* SpringImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringImageView.swift; path = Spring/SpringImageView.swift; sourceTree = "<group>"; };
+		DE27AE54102DF6E6293C5015A53C9BC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA22F7CFC7D5503FC66C79EFC0420925 /* SpringTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpringTextField.swift; path = Spring/SpringTextField.swift; sourceTree = "<group>"; };
+		EBD03BCF1DEA8FAC10FD9210DE57BC02 /* TPKeyboardAvoidingCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingCollectionView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingCollectionView.h; sourceTree = "<group>"; };
+		EEE038BD8992E286F9A93DB8CD9895D5 /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPKeyboardAvoidingScrollView.h; path = TPKeyboardAvoiding/TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
+		F5AEBBE57CA93621AF295C35441FA28A /* Spring.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Spring.xcconfig; sourceTree = "<group>"; };
+		F75819EB4588DB6FE78F564587ECBE53 /* Spring-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Spring-dummy.m"; sourceTree = "<group>"; };
+		F99BA5411984A3110E9DBAE90FD7E3D9 /* TPKeyboardAvoiding-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPKeyboardAvoiding-umbrella.h"; sourceTree = "<group>"; };
+		FA79B36E63F75B42C9ADBD46B28752EF /* TPKeyboardAvoidingTableView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPKeyboardAvoidingTableView.m; path = TPKeyboardAvoiding/TPKeyboardAvoidingTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17AAEC74E4B44A5DA2A74CA25D23EEB1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4A3BAE924ACFDFC2B576F82BE3F8CCA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0B6802566C04A3EBDA456F5A2916EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D93D56A094D70579E8B473DF99664B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6EF3D716CD4D99638BED71FD94B4DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F5F3DAE7CFD4F05C1446FD28499F9A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		204CF1111BB6B909C06F2699D6050130 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE27AE54102DF6E6293C5015A53C9BC4 /* Info.plist */,
+				1532E23052B88BA57247DB24E9D6FDEE /* Spring.modulemap */,
+				F5AEBBE57CA93621AF295C35441FA28A /* Spring.xcconfig */,
+				F75819EB4588DB6FE78F564587ECBE53 /* Spring-dummy.m */,
+				77258224FECC6E59DAFC1A253D5032A7 /* Spring-prefix.pch */,
+				6FC14689525502712AECDF5D02A07F36 /* Spring-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Spring";
+			sourceTree = "<group>";
+		};
+		493238FC170C3D80D514BCE6579AA2F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EEE90845B2F2B64591549C14ACFD86C3 /* Spring */,
+				DB0B05102470B8EF0AFDE6ADAB98C03F /* TPKeyboardAvoiding */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56E347A8063774A67E0D65F4044C6286 /* Pods-DesignCodeApp */ = {
+			isa = PBXGroup;
+			children = (
+				C39129AC4E1EF42F3CC66B536AE30952 /* Info.plist */,
+				9F914EEC31AAD4291A010B8C99409BD3 /* Pods-DesignCodeApp.modulemap */,
+				30B59EAEF5B78894D5458BA23454BAD7 /* Pods-DesignCodeApp-acknowledgements.markdown */,
+				A039D3CB4440312F3C6A47E96453AE83 /* Pods-DesignCodeApp-acknowledgements.plist */,
+				2BA1E7AC7C53DE8AAE756ACBC7C75C56 /* Pods-DesignCodeApp-dummy.m */,
+				1B7A49E117A807608079455340021FC5 /* Pods-DesignCodeApp-frameworks.sh */,
+				9EDA3F85101BEF5CE7DA8F139658FE21 /* Pods-DesignCodeApp-resources.sh */,
+				100CBB3C89DA8A84DEF4024C001977BD /* Pods-DesignCodeApp-umbrella.h */,
+				83909CACC60D5478D98CE862EAB2D355 /* Pods-DesignCodeApp.debug.xcconfig */,
+				CFE9DE973A57AE29F4A9110701AA54E5 /* Pods-DesignCodeApp.release.xcconfig */,
+			);
+			name = "Pods-DesignCodeApp";
+			path = "Target Support Files/Pods-DesignCodeApp";
+			sourceTree = "<group>";
+		};
+		7816CF90743511769D3BCC375A41FDFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				51FAE5B4318583CE41E1467C84520F74 /* Pods_DesignCodeApp.framework */,
+				09BD58D36F409B1F41AEF5D135961ABF /* Spring.framework */,
+				C87B023CC4CE4A7DBF73CC4F6E0EC127 /* TPKeyboardAvoiding.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				493238FC170C3D80D514BCE6579AA2F9 /* Pods */,
+				7816CF90743511769D3BCC375A41FDFE /* Products */,
+				FDBD98FC6CBAC85A3575B0095A8B78DA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DB0B05102470B8EF0AFDE6ADAB98C03F /* TPKeyboardAvoiding */ = {
+			isa = PBXGroup;
+			children = (
+				EBD03BCF1DEA8FAC10FD9210DE57BC02 /* TPKeyboardAvoidingCollectionView.h */,
+				7F82DE95A1010CF09022FBC7171C5C33 /* TPKeyboardAvoidingCollectionView.m */,
+				EEE038BD8992E286F9A93DB8CD9895D5 /* TPKeyboardAvoidingScrollView.h */,
+				A8E0C334A433E21D0161BBDA3FE417F0 /* TPKeyboardAvoidingScrollView.m */,
+				2D202D6E7EB59C7AC25322248E3253C3 /* TPKeyboardAvoidingTableView.h */,
+				FA79B36E63F75B42C9ADBD46B28752EF /* TPKeyboardAvoidingTableView.m */,
+				6B78D51BE49FA32471EF65835C13CC9F /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
+				15E6DB44C6C4A46BA0CFF1911BBBD5F5 /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				FFB5698C66852541E9462EAA0DFF1BC2 /* Support Files */,
+			);
+			name = TPKeyboardAvoiding;
+			path = TPKeyboardAvoiding;
+			sourceTree = "<group>";
+		};
+		EEE90845B2F2B64591549C14ACFD86C3 /* Spring */ = {
+			isa = PBXGroup;
+			children = (
+				47A920208A3ED604EB6762C568F7ABB3 /* AsyncButton.swift */,
+				84250ACB02BC62EB47AADA71C7E96B10 /* AsyncImageView.swift */,
+				8CDC21702F60C9E65C0E93D36FF5E978 /* AutoTextView.swift */,
+				123D3B4FE616735E5827BACAAC4C642A /* BlurView.swift */,
+				4DB866C66604F21E7FEF80337272F6F6 /* DesignableButton.swift */,
+				A79882F123CA8147EE7943F9408ABC8A /* DesignableImageView.swift */,
+				32D2A5AA93F40457FEC9C5AA7985487D /* DesignableLabel.swift */,
+				90815A8E5DAB97DBC692BE42FB64B543 /* DesignableTabBarController.swift */,
+				6C4D5737B8C16D42A64821780A8DC836 /* DesignableTextField.swift */,
+				480FECBF6543AE243C29BFE9BF18E4BE /* DesignableTextView.swift */,
+				229F1F7145EBF529C7E52A5113547357 /* DesignableView.swift */,
+				AC6AEE8AB247B140A179B8C2A2C8DD42 /* ImageLoader.swift */,
+				507013B77EF95FBAECCFB5D293076847 /* KeyboardLayoutConstraint.swift */,
+				9627CABA435CB85AF795D8288C4DA7EC /* LoadingView.swift */,
+				BCF1E53777993F8A3F990CAFD3D6D377 /* Misc.swift */,
+				74AE46A3C08E165B1ADDAC2745A8C4E1 /* SoundPlayer.swift */,
+				68527FBD4F8D8D8772AC70A5E0E3782B /* Spring.swift */,
+				4FB050A40F6625EB88D48D524D4EFFE8 /* SpringAnimation.swift */,
+				729D8FBEFC447AEDABA93713C6BC730C /* SpringButton.swift */,
+				D6981FD666D5210E6F265DF4C5843EA5 /* SpringImageView.swift */,
+				98A24F56CDEB81511356C262DD2F5722 /* SpringLabel.swift */,
+				EA22F7CFC7D5503FC66C79EFC0420925 /* SpringTextField.swift */,
+				1E082093201D97E598C2EA56DAEEB8B1 /* SpringTextView.swift */,
+				3E5E8C4B21559C3DECB6E496DA780794 /* SpringView.swift */,
+				78D79304F0EF2C29F7BEB7E09162E7B9 /* TransitionManager.swift */,
+				6D891FBED879DCC07D0B43E443380203 /* TransitionZoom.swift */,
+				B8262D5B3681265A1D2011E395793AD1 /* UnwindSegue.swift */,
+				FC35C8CE1B71FB48848E6F8E42166C93 /* Resources */,
+				204CF1111BB6B909C06F2699D6050130 /* Support Files */,
+			);
+			name = Spring;
+			path = Spring;
+			sourceTree = "<group>";
+		};
+		FC35C8CE1B71FB48848E6F8E42166C93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6528123EFD7228EA9942FC0DC7BF3489 /* Images.xcassets */,
+				2715B3527F7B9958667B549FFE73E850 /* LoadingView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FDBD98FC6CBAC85A3575B0095A8B78DA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				56E347A8063774A67E0D65F4044C6286 /* Pods-DesignCodeApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		FFB5698C66852541E9462EAA0DFF1BC2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				03BB785ABC62247DF98D5F85D70C10D6 /* Info.plist */,
+				4B3E056C50F5833EAF86A5A782DAFC70 /* TPKeyboardAvoiding.modulemap */,
+				A2E17F25BCD861F0CBA3C71FBD6CCA3F /* TPKeyboardAvoiding.xcconfig */,
+				8E48027B7DA566683EB23DF92B4061C7 /* TPKeyboardAvoiding-dummy.m */,
+				96E4357B7C2E521F7AE2323811FFD74F /* TPKeyboardAvoiding-prefix.pch */,
+				F99BA5411984A3110E9DBAE90FD7E3D9 /* TPKeyboardAvoiding-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TPKeyboardAvoiding";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0D7F241A26A627FABC3021956703CCC2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CDA62B3C1ECF4A2ECEB9EB21FD5A6A7 /* Pods-DesignCodeApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1937BE6E76DA54B497E37198A675A75E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA1B55EEDDDF81085A75F44462E13C82 /* TPKeyboardAvoiding-umbrella.h in Headers */,
+				404F0B26A0555132BE32B10CD5DD96C6 /* TPKeyboardAvoidingCollectionView.h in Headers */,
+				2CEE1C3742D5955B3DFD664C2845811A /* TPKeyboardAvoidingScrollView.h in Headers */,
+				9DD43623F4196F7B61437F9125AE225B /* TPKeyboardAvoidingTableView.h in Headers */,
+				721DBCC0D8D11D344E81318AC359E2D4 /* UIScrollView+TPKeyboardAvoidingAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDE2ED113F6091DD67AF74ADE6C6FFF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A8577EA3AB8B399D2B8622B66AEAF18 /* Spring-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57638207A68A290A64318FCE3D4280C6 /* Spring */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D14CB3D9FB4B8F0D9B872CF18457A94 /* Build configuration list for PBXNativeTarget "Spring" */;
+			buildPhases = (
+				C7CED33B45EEB080A1692BD2C673953D /* Sources */,
+				17AAEC74E4B44A5DA2A74CA25D23EEB1 /* Frameworks */,
+				6C36A95EDF4041E29E012064A0A364CF /* Resources */,
+				BDE2ED113F6091DD67AF74ADE6C6FFF1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spring;
+			productName = Spring;
+			productReference = 09BD58D36F409B1F41AEF5D135961ABF /* Spring.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA02D46375DFF43713B8725D2C299E41 /* Pods-DesignCodeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBFEB68A733F3D4231B702709D85E7D8 /* Build configuration list for PBXNativeTarget "Pods-DesignCodeApp" */;
+			buildPhases = (
+				F9114B473DF07BDFCBE31B7D07D28027 /* Sources */,
+				BC0B6802566C04A3EBDA456F5A2916EF /* Frameworks */,
+				0D7F241A26A627FABC3021956703CCC2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9675125305D6F3078F1F4ACE3CCB55B8 /* PBXTargetDependency */,
+				F44A51375B739631FF3D47CCE81FF797 /* PBXTargetDependency */,
+			);
+			name = "Pods-DesignCodeApp";
+			productName = "Pods-DesignCodeApp";
+			productReference = 51FAE5B4318583CE41E1467C84520F74 /* Pods_DesignCodeApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA6D46486DD14DBB55DA52B273C3DE60 /* TPKeyboardAvoiding */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E5F5A2AA9FADF813D95F142951372F4 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */;
+			buildPhases = (
+				ECDD994A68A05E8A75C0DBD75762C243 /* Sources */,
+				BC6EF3D716CD4D99638BED71FD94B4DD /* Frameworks */,
+				1937BE6E76DA54B497E37198A675A75E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TPKeyboardAvoiding;
+			productName = TPKeyboardAvoiding;
+			productReference = C87B023CC4CE4A7DBF73CC4F6E0EC127 /* TPKeyboardAvoiding.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7816CF90743511769D3BCC375A41FDFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA02D46375DFF43713B8725D2C299E41 /* Pods-DesignCodeApp */,
+				57638207A68A290A64318FCE3D4280C6 /* Spring */,
+				FA6D46486DD14DBB55DA52B273C3DE60 /* TPKeyboardAvoiding */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C36A95EDF4041E29E012064A0A364CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA7B4001B6EEDBC829398E3CCB62A1D5 /* Images.xcassets in Resources */,
+				3EC22217A6EB18C6EE7F9954C8A893BC /* LoadingView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7CED33B45EEB080A1692BD2C673953D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C33E77E96059E608DC45031709EF42E4 /* AsyncButton.swift in Sources */,
+				42246508B9411475BE0853D5F833221E /* AsyncImageView.swift in Sources */,
+				77335251ACC1E98E5B6A6396A3A4A6B2 /* AutoTextView.swift in Sources */,
+				1C8DEBFD704E1733A6223D708AF5BF20 /* BlurView.swift in Sources */,
+				D00D6776E412EAE228503E72412002DD /* DesignableButton.swift in Sources */,
+				2F76BE99F7510A8EBB86D5250442F561 /* DesignableImageView.swift in Sources */,
+				3D06B07AA25DCB52D88F4BF0AD50988D /* DesignableLabel.swift in Sources */,
+				DFE48E3DC99B6A4732644E598F30448B /* DesignableTabBarController.swift in Sources */,
+				B5007DF87956C0B6604F8CCC8454B8AA /* DesignableTextField.swift in Sources */,
+				AF1211E57FC311EAFB557A40C3A554E2 /* DesignableTextView.swift in Sources */,
+				7AF126D4C861784220BC7314E00DDDC1 /* DesignableView.swift in Sources */,
+				27CE3D09F8BB1677726D302D7C9B00AF /* ImageLoader.swift in Sources */,
+				8C9B1DE8719D0F21C72A89ABD347568B /* KeyboardLayoutConstraint.swift in Sources */,
+				6CB70DFEAB52DC34CD1996B843983C4C /* LoadingView.swift in Sources */,
+				5510F1266577CF8B28820F9C7C62102C /* Misc.swift in Sources */,
+				1103FE7AF76CBF77C3E5E7736BD6932E /* SoundPlayer.swift in Sources */,
+				9A27E4CE1E5A11D5FF5F14F15A6373F2 /* Spring-dummy.m in Sources */,
+				DBACC17D39DFCF8C6EA1A8F09CFD8DA5 /* Spring.swift in Sources */,
+				811DA0870C0078DE35F3131AC2DDA7CC /* SpringAnimation.swift in Sources */,
+				ADF0C78E892648CCA0A76E7922C0ABFA /* SpringButton.swift in Sources */,
+				D83327E4C751868F61939BD8D10BED00 /* SpringImageView.swift in Sources */,
+				61F6F56193CB164BA70F983EE911E5FF /* SpringLabel.swift in Sources */,
+				80574C9B3009C1E63A8B07D576C1AB78 /* SpringTextField.swift in Sources */,
+				0382F8615FA43AD33F1484D1BA8317D1 /* SpringTextView.swift in Sources */,
+				33C7EE7B5BCE5DEDAF4E0DF2A0A75D8F /* SpringView.swift in Sources */,
+				8BAF5CE0E390DFC6D37549982D98F250 /* TransitionManager.swift in Sources */,
+				32418D60EAA2F03A7F82B60D0459F0C3 /* TransitionZoom.swift in Sources */,
+				F7EF37F73559AFC34AA18ACE8699385C /* UnwindSegue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECDD994A68A05E8A75C0DBD75762C243 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D947021E7BD322F6D738D383AF3D724D /* TPKeyboardAvoiding-dummy.m in Sources */,
+				AF3CF7D7D2A9F5E9EAA6E47BACD0DA9F /* TPKeyboardAvoidingCollectionView.m in Sources */,
+				9E1B98B25B2C64C1A1F04D419248DBD3 /* TPKeyboardAvoidingScrollView.m in Sources */,
+				C0B184D76EDB50EC436899FF92C14DBD /* TPKeyboardAvoidingTableView.m in Sources */,
+				7A636EBA675B3D2405E5EA14E521C606 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9114B473DF07BDFCBE31B7D07D28027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				300C70C6DB10D2B26907394EAB01973C /* Pods-DesignCodeApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9675125305D6F3078F1F4ACE3CCB55B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Spring;
+			target = 57638207A68A290A64318FCE3D4280C6 /* Spring */;
+			targetProxy = E1678B5E318425A096ED1C0A1E3B5E6B /* PBXContainerItemProxy */;
+		};
+		F44A51375B739631FF3D47CCE81FF797 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPKeyboardAvoiding;
+			target = FA6D46486DD14DBB55DA52B273C3DE60 /* TPKeyboardAvoiding */;
+			targetProxy = 1DD51D483E2A86377D0F43D7496A55EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35A9030F569B7B02AD88E54F44A9B5CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E17F25BCD861F0CBA3C71FBD6CCA3F /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3C82EE871038EFB6AF5C4EB84D4DBE37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83909CACC60D5478D98CE862EAB2D355 /* Pods-DesignCodeApp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DesignCodeApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DesignCodeApp/Pods-DesignCodeApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DesignCodeApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5795CC834D342F4BDE9AB17280900C72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AEBBE57CA93621AF295C35441FA28A /* Spring.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C07ED8089F70A31B83996A8910D7F18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		823FD437EE022FC79BF36859F1CD8915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E17F25BCD861F0CBA3C71FBD6CCA3F /* TPKeyboardAvoiding.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPKeyboardAvoiding/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPKeyboardAvoiding/TPKeyboardAvoiding.modulemap";
+				PRODUCT_NAME = TPKeyboardAvoiding;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9853AC967DFD104951488AAD9EB183B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5AEBBE57CA93621AF295C35441FA28A /* Spring.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Spring/Spring-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Spring/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Spring/Spring.modulemap";
+				PRODUCT_NAME = Spring;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		98F29E7567052F62660DDD7069ADF73C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EEEA1BB0CC9491D7B2EF065F5B072A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE9DE973A57AE29F4A9110701AA54E5 /* Pods-DesignCodeApp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DesignCodeApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DesignCodeApp/Pods-DesignCodeApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DesignCodeApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C07ED8089F70A31B83996A8910D7F18 /* Debug */,
+				98F29E7567052F62660DDD7069ADF73C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D14CB3D9FB4B8F0D9B872CF18457A94 /* Build configuration list for PBXNativeTarget "Spring" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9853AC967DFD104951488AAD9EB183B1 /* Debug */,
+				5795CC834D342F4BDE9AB17280900C72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E5F5A2AA9FADF813D95F142951372F4 /* Build configuration list for PBXNativeTarget "TPKeyboardAvoiding" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823FD437EE022FC79BF36859F1CD8915 /* Debug */,
+				35A9030F569B7B02AD88E54F44A9B5CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFEB68A733F3D4231B702709D85E7D8 /* Build configuration list for PBXNativeTarget "Pods-DesignCodeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C82EE871038EFB6AF5C4EB84D4DBE37 /* Debug */,
+				EEEA1BB0CC9491D7B2EF065F5B072A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
