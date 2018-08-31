@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970B33BB2139429000701311 /* InteractionPanToClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970B33BA2139429000701311 /* InteractionPanToClose.swift */; };
+		970B33BD21394A3500701311 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970B33BC21394A3500701311 /* PurchaseViewController.swift */; };
+		970B33BF21394E8C00701311 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970B33BE21394E8C00701311 /* Assets.xcassets */; };
 		971EE18F21369823000BAC39 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971EE18D21369823000BAC39 /* TestimonialCollectionViewCell.swift */; };
 		971EE192213699D8000BAC39 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971EE191213699D8000BAC39 /* TestimonialViewController.swift */; };
 		975153E42139205400D3A81C /* PresentSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975153E32139205400D3A81C /* PresentSectionViewController.swift */; };
@@ -18,13 +21,15 @@
 		97D9EE8A2134290A00340A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D9EE882134290A00340A26 /* Main.storyboard */; };
 		97D9EE8D2134290A00340A26 /* DesignCodeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97D9EE8B2134290A00340A26 /* DesignCodeApp.xcdatamodeld */; };
 		97D9EE922134290E00340A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97D9EE902134290E00340A26 /* LaunchScreen.storyboard */; };
-		97FF10ED2137EBBF0041F6AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FF10EC2137EBBF0041F6AD /* Assets.xcassets */; };
 		97FF10EF213801D60041F6AD /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF10EE213801D60041F6AD /* ChaptersViewController.swift */; };
 		97FF10F1213818000041F6AD /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF10F0213818000041F6AD /* BookmarksTableViewController.swift */; };
 		97FF10F3213826380041F6AD /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FF10F2213826380041F6AD /* BookmarkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		970B33BA2139429000701311 /* InteractionPanToClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionPanToClose.swift; sourceTree = "<group>"; };
+		970B33BC21394A3500701311 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewController.swift; sourceTree = "<group>"; };
+		970B33BE21394E8C00701311 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../Downloads/DesignCodeApp Gesture Interactions Final/DesignCodeApp/Assets.xcassets"; sourceTree = "<group>"; };
 		971EE18D21369823000BAC39 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		971EE191213699D8000BAC39 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
 		975153E32139205400D3A81C /* PresentSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSectionViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +43,6 @@
 		97D9EE8C2134290A00340A26 /* DesignCodeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesignCodeApp.xcdatamodel; sourceTree = "<group>"; };
 		97D9EE912134290E00340A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97D9EE932134290E00340A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		97FF10EC2137EBBF0041F6AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		97FF10EE213801D60041F6AD /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
 		97FF10F0213818000041F6AD /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
 		97FF10F2213826380041F6AD /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				97D9EE842134290A00340A26 /* AppDelegate.swift */,
 				97D9EE862134290A00340A26 /* HomeViewController.swift */,
 				975153E32139205400D3A81C /* PresentSectionViewController.swift */,
+				970B33BA2139429000701311 /* InteractionPanToClose.swift */,
+				970B33BC21394A3500701311 /* PurchaseViewController.swift */,
 				97FF10F0213818000041F6AD /* BookmarksTableViewController.swift */,
 				97FF10F2213826380041F6AD /* BookmarkTableViewCell.swift */,
 				97FF10EE213801D60041F6AD /* ChaptersViewController.swift */,
@@ -86,7 +92,7 @@
 				971EE191213699D8000BAC39 /* TestimonialViewController.swift */,
 				979400BE2135861500BCB01A /* Data.swift */,
 				97D9EE882134290A00340A26 /* Main.storyboard */,
-				97FF10EC2137EBBF0041F6AD /* Assets.xcassets */,
+				970B33BE21394E8C00701311 /* Assets.xcassets */,
 				97D9EE902134290E00340A26 /* LaunchScreen.storyboard */,
 				97D9EE932134290E00340A26 /* Info.plist */,
 				97D9EE8B2134290A00340A26 /* DesignCodeApp.xcdatamodeld */,
@@ -153,7 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				97D9EE922134290E00340A26 /* LaunchScreen.storyboard in Resources */,
-				97FF10ED2137EBBF0041F6AD /* Assets.xcassets in Resources */,
+				970B33BF21394E8C00701311 /* Assets.xcassets in Resources */,
 				97D9EE8A2134290A00340A26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,8 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				970B33BB2139429000701311 /* InteractionPanToClose.swift in Sources */,
 				97D9EE872134290A00340A26 /* HomeViewController.swift in Sources */,
 				97FF10F1213818000041F6AD /* BookmarksTableViewController.swift in Sources */,
+				970B33BD21394A3500701311 /* PurchaseViewController.swift in Sources */,
 				979400BF2135861500BCB01A /* Data.swift in Sources */,
 				971EE192213699D8000BAC39 /* TestimonialViewController.swift in Sources */,
 				97FF10F3213826380041F6AD /* BookmarkTableViewCell.swift in Sources */,
