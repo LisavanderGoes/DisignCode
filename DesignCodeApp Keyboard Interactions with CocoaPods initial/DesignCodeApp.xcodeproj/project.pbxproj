@@ -29,6 +29,7 @@
 		96ABF7311FEEA64300AF4146 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ABF7301FEEA64300AF4146 /* TestimonialViewController.swift */; };
 		96ABF7331FEF113100AF4146 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ABF7321FEF113100AF4146 /* TestimonialCollectionViewCell.swift */; };
 		96ECA89B1FDF177400DE9E40 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ECA89A1FDF177400DE9E40 /* SectionViewController.swift */; };
+		970B33C121396E8000701311 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970B33C021396E8000701311 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		96ABF7301FEEA64300AF4146 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
 		96ABF7321FEF113100AF4146 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		96ECA89A1FDF177400DE9E40 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		970B33C021396E8000701311 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				9698CD1E1FBB5DE000501C47 /* AppDelegate.swift */,
 				9698CD201FBB5DE000501C47 /* HomeViewController.swift */,
+				970B33C021396E8000701311 /* LoginViewController.swift */,
 				96ECA89A1FDF177400DE9E40 /* SectionViewController.swift */,
 				79528323200FD2F0005F248C /* PresentSectionViewController.swift */,
 				96ABF7301FEEA64300AF4146 /* TestimonialViewController.swift */,
@@ -271,6 +274,7 @@
 				7999452A2018F867003AFA48 /* PurchaseViewController.swift in Sources */,
 				7932CE87200BE9080006980E /* MoreViewController.swift in Sources */,
 				9688C5C51FE72BF000BCD68A /* Data.swift in Sources */,
+				970B33C121396E8000701311 /* LoginViewController.swift in Sources */,
 				9698CD1F1FBB5DE000501C47 /* AppDelegate.swift in Sources */,
 				96ECA89B1FDF177400DE9E40 /* SectionViewController.swift in Sources */,
 				96ABF7311FEEA64300AF4146 /* TestimonialViewController.swift in Sources */,

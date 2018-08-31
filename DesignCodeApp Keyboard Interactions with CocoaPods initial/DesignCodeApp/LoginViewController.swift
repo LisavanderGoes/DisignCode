@@ -1,23 +1,20 @@
 //
-//  DiscountViewController.swift
+//  LoginViewController.swift
 //  DesignCodeApp
 //
-//  Created by Tiago Mergulhão on 25/01/18.
+//  Created by WebIQ Stagiaire on 31-08-18.
 //  Copyright © 2018 Meng To. All rights reserved.
 //
 
 import UIKit
 
-class DiscountViewController: UIViewController {
-
+class LoginViewController: UIViewController {
     @IBOutlet var panToClose: InteractionPanToClose!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         panToClose.setGestureRecognizer()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
