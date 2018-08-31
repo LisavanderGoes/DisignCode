@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var chapterCollectionView: UICollectionView!
     
     var isStatusBarHidden = false
+    var presentSectionViewController = PresentSectionViewController()
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent
@@ -75,12 +76,19 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if segue.identifier == "HomeToSection"{
-            let toViewController = segue.destination as! SectionViewController
+            let destination = segue.destination as! SectionViewController
             let indexPath = sender as! IndexPath
             let section = sections[indexPath.row]
-            toViewController.section = section
-            toViewController.sections = sections
-            toViewController.indexPath = indexPath
+            destination.section = section
+            destination.sections = sections
+            destination.indexPath = indexPath
+            destination.transitioningDelegate = self
+            
+            let attributes = chapterCollectionView.layoutAttributesForItem(at: indexPath)
+            let cellFrame = chapterCollectionView.convert(attributes!.frame, to: view)
+            
+            presentSectionViewController.cellFrame = cellFrame
+            presentSectionViewController.cellTransform = animateCell(cellFrame: cellFrame)
             
             isStatusBarHidden = true
             UIView.animate(withDuration: 0.5, animations: {self.setNeedsStatusBarAppearanceUpdate()})
@@ -170,6 +178,12 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         performSegue(withIdentifier: "HomeToSection", sender: indexPath)
+    }
+}
+
+extension HomeViewController : UIViewControllerTransitioningDelegate{
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return presentSectionViewController
     }
 }
 

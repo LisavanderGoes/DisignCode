@@ -798,7 +798,7 @@
                                             <constraint firstAttribute="trailing" secondItem="43F-OT-hR5" secondAttribute="trailing" id="HXX-BL-uzr"/>
                                             <constraint firstItem="JFn-HD-gZA" firstAttribute="leading" secondItem="hOC-7w-saq" secondAttribute="leading" constant="20" id="Jvc-EO-jlF"/>
                                             <constraint firstItem="43F-OT-hR5" firstAttribute="top" secondItem="jvO-U0-YyO" secondAttribute="top" id="Xtv-xu-cr5"/>
-                                            <constraint firstAttribute="height" constant="420" id="bXv-30-NDc"/>
+                                            <constraint firstAttribute="height" priority="999" constant="420" id="bXv-30-NDc"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Rs-f3-qae" secondAttribute="trailing" constant="20" symbolic="YES" id="fY1-wt-6fB"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JFn-HD-gZA" secondAttribute="trailing" constant="20" symbolic="YES" id="ggr-SY-T9E"/>
                                             <constraint firstItem="a94-Yl-8yF" firstAttribute="top" secondItem="jvO-U0-YyO" secondAttribute="top" constant="20" id="hxn-e6-U2O"/>
@@ -813,13 +813,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="jvO-U0-YyO" firstAttribute="leading" secondItem="d2C-wU-lI4" secondAttribute="leading" id="3K3-ik-Kwx"/>
                                     <constraint firstItem="jvO-U0-YyO" firstAttribute="centerX" secondItem="d2C-wU-lI4" secondAttribute="centerX" id="3rl-p1-at1"/>
                                     <constraint firstAttribute="trailing" secondItem="2ic-wl-Eds" secondAttribute="trailing" constant="20" id="K82-6Y-Rd2"/>
                                     <constraint firstItem="2ic-wl-Eds" firstAttribute="top" secondItem="jvO-U0-YyO" secondAttribute="bottom" constant="30" id="O4y-6y-5DK"/>
                                     <constraint firstItem="2ic-wl-Eds" firstAttribute="leading" secondItem="bum-5s-uoH" secondAttribute="leading" constant="20" id="Qsg-zi-vt2"/>
-                                    <constraint firstAttribute="bottom" secondItem="jvO-U0-YyO" secondAttribute="bottom" constant="500" id="TxU-nA-3ra"/>
+                                    <constraint firstAttribute="bottom" secondItem="jvO-U0-YyO" secondAttribute="bottom" priority="999" constant="500" id="TxU-nA-3ra"/>
                                     <constraint firstAttribute="trailing" secondItem="jvO-U0-YyO" secondAttribute="trailing" id="Z0m-sH-X9U"/>
                                     <constraint firstItem="jvO-U0-YyO" firstAttribute="top" secondItem="d2C-wU-lI4" secondAttribute="top" id="gWI-qW-0Kl"/>
                                 </constraints>
@@ -861,11 +862,11 @@
                                 </userDefinedRuntimeAttributes>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="teI-cZ-gPm" firstAttribute="top" secondItem="ElZ-Ou-mCk" secondAttribute="top" constant="20" id="G6B-LC-F31"/>
-                            <constraint firstItem="39r-oX-pOE" firstAttribute="trailing" secondItem="d2C-wU-lI4" secondAttribute="trailing" id="NL9-kJ-Cmc"/>
-                            <constraint firstItem="39r-oX-pOE" firstAttribute="bottom" secondItem="d2C-wU-lI4" secondAttribute="bottom" id="Nyq-cd-oGa"/>
+                            <constraint firstItem="39r-oX-pOE" firstAttribute="trailing" secondItem="d2C-wU-lI4" secondAttribute="trailing" priority="999" id="NL9-kJ-Cmc"/>
+                            <constraint firstItem="39r-oX-pOE" firstAttribute="bottom" secondItem="d2C-wU-lI4" secondAttribute="bottom" priority="999" id="Nyq-cd-oGa"/>
                             <constraint firstItem="39r-oX-pOE" firstAttribute="trailing" secondItem="teI-cZ-gPm" secondAttribute="trailing" constant="20" id="P3A-WW-Dvc"/>
                             <constraint firstItem="d2C-wU-lI4" firstAttribute="leading" secondItem="39r-oX-pOE" secondAttribute="leading" id="RDx-rY-4EB"/>
                             <constraint firstItem="39r-oX-pOE" firstAttribute="trailing" secondItem="teI-cZ-gPm" secondAttribute="trailing" constant="20" id="cKP-ae-jiO"/>
@@ -878,8 +879,12 @@
                     <connections>
                         <outlet property="bodyLabel" destination="2ic-wl-Eds" id="JRM-dD-lNB"/>
                         <outlet property="captionLabel" destination="JFn-HD-gZA" id="sjB-uB-UPA"/>
+                        <outlet property="closeVisualEffectView" destination="teI-cZ-gPm" id="eYf-Zp-Ty7"/>
                         <outlet property="coverImageView" destination="43F-OT-hR5" id="xUJ-Ia-aD7"/>
+                        <outlet property="coverView" destination="jvO-U0-YyO" id="9o9-M9-ROW"/>
                         <outlet property="progressLabel" destination="JaM-h0-vsu" id="OWI-nQ-2gp"/>
+                        <outlet property="scrollView" destination="d2C-wU-lI4" id="nlS-ao-9LZ"/>
+                        <outlet property="subheadVisualEffectView" destination="a94-Yl-8yF" id="oKh-LR-iuk"/>
                         <outlet property="titleLabel" destination="9Rs-f3-qae" id="Qa3-MM-wo1"/>
                     </connections>
                 </viewController>

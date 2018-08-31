@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		971EE18F21369823000BAC39 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971EE18D21369823000BAC39 /* TestimonialCollectionViewCell.swift */; };
 		971EE192213699D8000BAC39 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971EE191213699D8000BAC39 /* TestimonialViewController.swift */; };
+		975153E42139205400D3A81C /* PresentSectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 975153E32139205400D3A81C /* PresentSectionViewController.swift */; };
 		9768EDB021368EC900D07D00 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9768EDAF21368EC900D07D00 /* SectionCollectionViewCell.swift */; };
 		979400BD2135709200BCB01A /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979400BC2135709200BCB01A /* SectionViewController.swift */; };
 		979400BF2135861500BCB01A /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979400BE2135861500BCB01A /* Data.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		971EE18D21369823000BAC39 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		971EE191213699D8000BAC39 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
+		975153E32139205400D3A81C /* PresentSectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentSectionViewController.swift; sourceTree = "<group>"; };
 		9768EDAF21368EC900D07D00 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 		979400BC2135709200BCB01A /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		979400BE2135861500BCB01A /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 			children = (
 				97D9EE842134290A00340A26 /* AppDelegate.swift */,
 				97D9EE862134290A00340A26 /* HomeViewController.swift */,
+				975153E32139205400D3A81C /* PresentSectionViewController.swift */,
 				97FF10F0213818000041F6AD /* BookmarksTableViewController.swift */,
 				97FF10F2213826380041F6AD /* BookmarkTableViewCell.swift */,
 				97FF10EE213801D60041F6AD /* ChaptersViewController.swift */,
@@ -170,6 +173,7 @@
 				97D9EE852134290A00340A26 /* AppDelegate.swift in Sources */,
 				979400BD2135709200BCB01A /* SectionViewController.swift in Sources */,
 				9768EDB021368EC900D07D00 /* SectionCollectionViewCell.swift in Sources */,
+				975153E42139205400D3A81C /* PresentSectionViewController.swift in Sources */,
 				971EE18F21369823000BAC39 /* TestimonialCollectionViewCell.swift in Sources */,
 				97D9EE8D2134290A00340A26 /* DesignCodeApp.xcdatamodeld in Sources */,
 				97FF10EF213801D60041F6AD /* ChaptersViewController.swift in Sources */,
