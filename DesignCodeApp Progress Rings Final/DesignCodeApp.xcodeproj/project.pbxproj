@@ -34,6 +34,8 @@
 		96ABF7311FEEA64300AF4146 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ABF7301FEEA64300AF4146 /* TestimonialViewController.swift */; };
 		96ABF7331FEF113100AF4146 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ABF7321FEF113100AF4146 /* TestimonialCollectionViewCell.swift */; };
 		96ECA89B1FDF177400DE9E40 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ECA89A1FDF177400DE9E40 /* SectionViewController.swift */; };
+		970B33C321397BB500701311 /* QuestionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970B33C221397BB500701311 /* QuestionCollectionViewCell.swift */; };
+		974F4E73213D174500840212 /* ScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974F4E72213D174500840212 /* ScoreCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		96ABF7301FEEA64300AF4146 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
 		96ABF7321FEF113100AF4146 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		96ECA89A1FDF177400DE9E40 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		970B33C221397BB500701311 /* QuestionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCollectionViewCell.swift; sourceTree = "<group>"; };
+		974F4E72213D174500840212 /* ScoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				9698CD221FBB5DE000501C47 /* Main.storyboard */,
 				79878B7E2024A16700775586 /* ExerciseTableViewCell.swift */,
 				790DD7B72024A2B400F2C3CC /* ExercisesTableViewController.swift */,
+				970B33C221397BB500701311 /* QuestionCollectionViewCell.swift */,
+				974F4E72213D174500840212 /* ScoreCollectionViewCell.swift */,
 				79878B7A202482C400775586 /* UILabel+Animate.swift */,
 				796871242020A1F00000AFCA /* LoginViewController.swift */,
 				79E0A7FA201A71B700FCCD58 /* UILabel+Inspectable.swift */,
@@ -288,6 +294,8 @@
 				7999452A2018F867003AFA48 /* PurchaseViewController.swift in Sources */,
 				7932CE87200BE9080006980E /* MoreViewController.swift in Sources */,
 				79878B7F2024A16700775586 /* ExerciseTableViewCell.swift in Sources */,
+				970B33C321397BB500701311 /* QuestionCollectionViewCell.swift in Sources */,
+				974F4E73213D174500840212 /* ScoreCollectionViewCell.swift in Sources */,
 				9688C5C51FE72BF000BCD68A /* Data.swift in Sources */,
 				796871252020A1F00000AFCA /* LoginViewController.swift in Sources */,
 				9698CD1F1FBB5DE000501C47 /* AppDelegate.swift in Sources */,
